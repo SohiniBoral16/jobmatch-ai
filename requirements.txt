@@ -1,0 +1,35 @@
+# ============================================================
+# JobMatch AI — Python Dependencies
+# ============================================================
+# Install with:  pip install -r requirements.txt --break-system-packages
+# Or in venv:    pip install -r requirements.txt
+
+# ── LangGraph / LangChain ───────────────────────────────────
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-openai>=0.3.0
+langchain-anthropic>=0.3.0
+langsmith>=0.1.0
+
+# ── HTTP / network ──────────────────────────────────────────
+httpx[socks]>=0.27.0         # Needed if running behind a SOCKS proxy
+
+# ── UI ──────────────────────────────────────────────────────
+streamlit>=1.40.0
+
+# ── Job scraping ────────────────────────────────────────────
+python-jobspy>=1.1.0
+pandas>=2.0.0
+
+# ── PDF parsing ─────────────────────────────────────────────
+pdfplumber>=0.11.0
+
+# ── Config ──────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Phase 2: Email alerts ───────────────────────────────────
+apscheduler>=3.10.4          # Daily cron scheduler
+
+# ── Phase 2: Auto-fill (optional, comment out if not using) ─
+selenium>=4.27.0
+webdriver-manager>=4.0.2

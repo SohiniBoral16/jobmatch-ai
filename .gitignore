@@ -1,0 +1,39 @@
+# ============================================================
+# JobMatch AI — .gitignore
+# ============================================================
+
+# NEVER commit the real .env — it contains API keys
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Scraped data / output files
+*.csv
+logs/
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
